@@ -1,0 +1,30 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+ui/dist
+ui/tmp
+ui/out-tsc
+
+# dependencies
+ui/node_modules
+server/node_modules
+
+*.launch
+.settings/
+*.sublime-workspace
+
+!.vscode/extensions.json
+
+# misc
+ui/.sass-cache
+ui/connect.lock
+ui/coverage
+ui/libpeerconnection.log
+ui/npm-debug.log
+ui/yarn-error.log
+ui/testem.log
+ui/typings
+
+# System Files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+{
+  "name": "node-kafka-express",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-prettify": "^0.1.1",
+    "kafka-node": "^3.0.1"
+  }
+}

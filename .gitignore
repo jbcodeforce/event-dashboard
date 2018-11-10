@@ -8,6 +8,7 @@ ui/out-tsc
 # dependencies
 ui/node_modules
 server/node_modules
+server/dist
 
 *.launch
 .settings/

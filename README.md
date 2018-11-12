@@ -1,15 +1,16 @@
 # Event Dashboard mini project
 
-I am implementing a simple angular app presenting a chart of sensor metrics using Kafka, Nodejs, Expressjs and websocket.
+I am implementing a simple angular app presenting a graphical chart of sensor metrics over time using Kafka, Nodejs, Expressjs and websocket.
+
 The architecture looks like the diagram below:
 ![](docs/hlview.png)
 
 ## Prerequisites
-* Install Angular 7.0+
+* Install Angular 6.0+
 * Under the UI folder run `npm install`
 * Build the user interface with `ng build`
 * Under the Server run also `npm install`
-* Have a Kafka Broker accessible.
+* Have a Kafka Broker accessible. If you do not have at least docker and use the docker compose file.
 
 ## Server code
 The nodejs server code is listening to a kafka topic to get sensor metrics and propagate those events to the angular app via websocket.

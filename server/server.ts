@@ -73,11 +73,12 @@ export class AssetMetric {
 wss.on('connection', (ws: WebSocket) => {
 
     const extWs = ws as ExtWebSocket;
-
+    console.warn(`Client connected`);
     extWs.isAlive = true;
     startConsumer(ws);
-    ws.on('pong', () => {
+    ws.on('message', () => {
         extWs.isAlive = true;
+        ws.send('ping');
     });
     ws.on('error', (err) => {
         console.warn(`Client disconnected - reason: ${err}`);
